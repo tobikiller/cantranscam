@@ -9,11 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quantico:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- <link rel="stylesheet" href="owl.carousel.min.css">
-   <link rel="stylesheet" href="owl.theme.default.min.css"> -->
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Quantico:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="slick.css"/>
    <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
     <title>CANTRANSCAM Freight agency</title>
@@ -25,8 +21,10 @@
             <img class="h-[100px] " src="images/cantranscam-logo.svg" alt="cantranscam logo">
 
             <ul class="hidden md:flex items-center space-x-[30px]  ">
-                <li class="font-Quantico text-lg"><a href="#">About Us</a></li>
-                <li class="font-Quantico text-lg"><a href="#">Contact Us</a></li>
+                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#">About Us</a></li>
+                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#contact">Contact Us</a></li>
+                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#contact">Our service</a></li>
+                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#contact">Team</a></li>
                 <li class="font-Quantico text-lg bg-LightBlue rounded-lg p-1 "><a class="text-white" href="#">request an
                         appointement</a></li>
             </ul>
@@ -36,34 +34,40 @@
                 <div class="w-[25px] h-1 bg-LightBlue "></div>
             </div>
         </div>
-    </nav>
+  
 
-    <header class="mx-[25px] lg:mx-[50px] mt-[75px] ">
-        <div class="flex flex-col md:flex-row items-center space-y-6 md:space-x-0 justify-between w-full">
+    <header class=" mt-[40px] bg-profiel-group bg-cover bg-no-repeat bg-top w-full overflow-hidden h-[60vh] ">
+        <div class="mx-[25px] lg:mx-[50px] flex flex-col md:flex-row items-center space-y-6 md:space-x-0 justify-between w-full pt-10">
             <div class="space-y-2 h-fit">
                 <h1
                     class="text-LightBlue font-Poppins font-bold text-2xl md:text-3xl lg:text-5xl leading-6 lg:leading-10  ">
-                    CATRANSCAM <br><span class="text-Deepblue">YOUR IDEAL PARTNER</span></h1>
-                <p class="text-base font-Quantico text-black leading-6 lg:max-w-[575px] ">With more than 20 years of
+                    CATRANSCAM <br><span class="text-white">YOUR IDEAL PARTNER</span></h1>
+                <p class="text-base font-Quantico text-white leading-6 lg:max-w-[575px] ">With more than 20 years of
                     experience CATRANSCAM was
                     created in 1991 with the vision to facilitated international trade. Today we have a fully trained
                     task force with years of experience in the field. Over 20 years of experience is over 20 years of
-                    loyal and quality service</p>
-                <div class="bg-LightBlue rounded-md w-fit py-2 px-[9px] ">
-                    <a class="text-white text-lg font-Quantico" href="#">About Us</a>
-                </div>
+                    loyal and quality service</p>   
 
             </div>
-            <img src="images/ship&cargo.jpg" alt="">
+           
+        </div>
+                  
+        <div  class="container hidden bg-LightBlue w-screen mx-auto  absolute top-0  flex justify-center items-center h-screen">
+            <div class="w-[70%] bg-white ">
+                <h2>Request an appointement</h2>
+          </div>
         </div>
     </header>
 
+</nav>
+
     <main class="mt-[75px] ">
-        <section class="mx-[25px] lg:mx-[50px] our-section">
-            <h2 class="font-Poppins font-bold text-4xl text-LightBlue text-center ">Our <span
+        <section class="mx-[25px] lg:mx-[50px] our-section overflow-hidden">
+            <h2 class="font-Poppins font-bold text-4xl text-white bg-LightBlue p-5 max-w-[300px] mx-auto text-center ">Our <span
                     class="text-Deepblue">Services</span></h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mt-8">
+            <div class="flex items-center justify-between  gap-10  mt-8">
+               <div class="grid grid-cols-2 items-center gap-5">
                 <div class="space-y-2">
                     <img src="icons/transit.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Transit</h3>
@@ -96,7 +100,7 @@
 
                 <div class="space-y-2">
                     <img src="icons/fret.svg" alt="">
-                    <h3 class="text-xl text-Deepblue font-bold">Fret Reservation</h3>
+                    <h3 class="text-xl text-Deepblue font-bold">Freight Reservation</h3>
                     <p class="font-Quantico text-black leading-6 text-base ">We are part of a network of unloaders
                         distributed
                         around the world with a recognised and established diligence. We have the solution for your
@@ -109,6 +113,9 @@
                     <p class="font-Quantico text-black leading-6 text-base ">Distance is no barrier . We convey your goods in all safety 
                     </p>
                 </div>
+               </div>
+
+               <img src="images/ship&cargo.jpg" alt="">
 
 
             </div>
@@ -183,7 +190,7 @@
                     
                        <div class=" mx-auto text-left md:mx-0" >
                            <h4 class="font-Poppins text-2xl font-bold text-Deepblue">Briefing</h4>
-                           <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                           <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >Provid detailed information to assist customer in making the right decisions</p>
                        </div>
                    </div> 
                    
@@ -194,7 +201,7 @@
                  
                     <div class=" mx-auto text-left " >
                         <h4 class="font-Poppins text-2xl font-bold text-Deepblue">Processing</h4>
-                        <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >collect all useful information from clents make all documentations available</p>
                     </div>
                 </div> 
                 
@@ -205,7 +212,7 @@
                  
                     <div class="  text-left " >
                         <h4 class="font-Poppins text-2xl font-bold text-Deepblue">Finishing</h4>
-                        <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                        <p class="body-text max-w-full md:max-w-[360px] lg:max-w-[400px] " >After completing the process we deliver clients goods at their door-steps</p>
                     </div>
                 </div>  
 
@@ -225,7 +232,7 @@
                  <div class="flex  flex-col lg:flex-row justify-between items-center ml-[25px] lg:mx-[50px]  ">
                        <div class="space-y-2 mb-6 text-left sm:text-center sm:mx-auto lg:text-left lg:mx-0">
                            <h2 class="text-6xl font-Poppins text-LightBlue font-bold ">Our <br> Team </h2>
-                           <p class="body-text max-w-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, suscipit at, expedita dignissimos odit ut ea explicabo, excepturi ex nostrum eius officia modi nemo incidunt ratione.</p>
+                           <p class="body-text max-w-sm ">Specialsed in our sector of activity we provide you with top notch services</p>
                            <div class="social flex items-center justify-start sm:justify-center lg:justify-start  space-x-0.5">
                                <a href="#"><span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #135dff; font-size: 32px;"></span></a>
                                <a href="#"><span class="iconify" data-icon="ant-design:facebook-filled" style="color: #135dff; font-size: 32px;"></span></a>
@@ -237,7 +244,20 @@
                            <div class=" autoplay space-x-3 overflow-hidden flex items-center w-[100%]  ">
 
                             <div class="mx-5">
-                                <div class="bg-profile-1 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
+                                <div class="bg-profile-DG bg-center  bg-cover  w-[305px] h-[445px] relative group ">
+                                    <div class="absolute bottom-5 z-10 ml-[10px] ">
+                                     <p  class="font-Poppins font-bold text-white  ">M Fuya Rigobert</p>
+                                     <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
+                                         <p class=" font-Quantico text-white">Directeur General</p>
+                                         <p class="font-Quantico font-bold text-white ">20 ans <span class="font-thin " >d'experience</span></p>
+                                     </div>
+                                    
+                                    </div>
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
+                                </div> 
+                            </div>
+                            <div class="mx-5">
+                                <div class="bg-profile-1 bg-center  bg-cover  w-[305px] h-[445px] relative group ">
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Njilenou Wandji Emmanuel</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
@@ -246,37 +266,11 @@
                                      </div>
                                     
                                     </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
                                 </div> 
                             </div>
                             <div class="mx-5">
-                                <div class="bg-profile-1 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
-                                    <div class="absolute bottom-5 z-10 ml-[10px] ">
-                                     <p  class="font-Poppins font-bold text-white  ">M Njilenou Wandji Emmanuel</p>
-                                     <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Responsable Administratif et Financier</p>
-                                         <p class="font-Quantico font-bold text-white ">19 ans <span class="font-thin " >d'experience</span></p>
-                                     </div>
-                                    
-                                    </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
-                                </div> 
-                            </div>
-                            <div class="mx-5">
-                                <div class="bg-profile-2 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
-                                    <div class="absolute bottom-5 z-10 ml-[10px] ">
-                                     <p  class="font-Poppins font-bold text-white  ">M Ndemeck Dieudonne</p>
-                                     <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Déclarant No 2 Service D’exploitation</p>
-                                         <p class="font-Quantico font-bold text-white ">19 ans <span class="font-thin " >d'experience</span></p>
-                                     </div>
-                                    
-                                    </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
-                                </div> 
-                            </div>
-                            <div class="mx-5">
-                                <div class="bg-profile-1 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
+                                <div class="bg-profile-2 bg-center  bg-cover  w-[305px] h-[445px] relative group ">
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Djoukam Blaise</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
@@ -285,24 +279,25 @@
                                      </div>
                                     
                                     </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
                                 </div> 
                             </div>
                             <div class="mx-5">
-                                <div class="bg-profile-3 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
+                                <div class="bg-profile-3 bg-center  bg-cover  w-[305px] h-[445px] relative group ">
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
-                                     <p  class="font-Poppins font-bold text-white  ">Mme Tsobgni Marcelline</p>
+                                     <p  class="font-Poppins font-bold text-white  ">M Ndemeck Dieudonne</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Secrétaire de Direction </p>
-                                         <p class="font-Quantico font-bold text-white ">15 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">Déclarant No 2 Service D’exploitation</p>
+                                         <p class="font-Quantico font-bold text-white ">8 ans <span class="font-thin " >d'experience</span></p>
                                      </div>
                                     
                                     </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
                                 </div> 
                             </div>
+                           
                             <div class="mx-5">
-                                <div class="bg-profile-3 bg-center  bg-cover  w-[305px] h-[360px] relative group ">
+                                <div class="bg-profile-mag bg-center  bg-cover  w-[305px] h-[445px] relative group ">
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Mouangeu Thimote </p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
@@ -311,7 +306,20 @@
                                      </div>
                                     
                                     </div>
-                                  <div class="  gradient absolute top-0 w-[305px] h-[360px]  "></div> 
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
+                                </div> 
+                            </div>
+                            <div class="mx-5">
+                                <div class="bg-profile-5 bg-center  bg-cover  w-[305px] h-[445px] relative group ">
+                                    <div class="absolute bottom-5 z-10 ml-[10px] ">
+                                     <p  class="font-Poppins font-bold text-white  ">Mme Tsobgni Marcelline</p>
+                                     <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
+                                         <p class=" font-Quantico text-white">Secrétaire de Direction </p>
+                                         <p class="font-Quantico font-bold text-white ">15 ans <span class="font-thin " >d'experience</span></p>
+                                     </div>
+                                    
+                                    </div>
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
                                 </div> 
                             </div>
                                
@@ -331,7 +339,7 @@
 
     </main>
 
-    <section class="form mt-20 mx-[25px] lg:mx-[50px] ">
+    <section class="form mt-20 mx-[25px] lg:mx-[50px] " id="contact">
         
         <div class="space-y-3"> 
            <h2 class="font-Poppins  text-LightBlue text-5xl font-bold">Contact Us</h2>

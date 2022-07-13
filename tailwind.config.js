@@ -13,9 +13,14 @@ module.exports = {
       },
       backgroundImage:{
         "world-map":"url('images/world map.png') ",
-        "profile-1":"url('images/profile1.png') ",
-        "profile-2":"url('images/profile2.png') ",
-        "profile-3":"url('images/profile3.png') ", 
+        "profile-1":"url('images/profile1.jpg') ",
+        "profile-2":"url('images/profile2.jpg') ",
+        "profile-3":"url('images/profile3.jpg') ",
+        "profile-4":"url('images/profile4.jpg') ", 
+        "profile-5":"url('images/profile5.jpg') ", 
+        "profile-mag":"url('images/profile-mag.png') ",
+        "profile-DG":"url('images/DG.jpg') ", 
+        "profiel-group":"url('images/cantranscam-team.jpg') ", 
       }
 
     },
