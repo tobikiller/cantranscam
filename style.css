@@ -3,6 +3,10 @@
     border-radius: 8px;
 }
 
+.header-gradient{
+    background: linear-gradient(0deg, rgba(19, 93, 255, 0.76) 2.08%, rgba(217, 217, 217, 0) 61.94%);
+}
+
 .activate{
     opacity: 1;
     transition: 0.5s ease-in-out;
