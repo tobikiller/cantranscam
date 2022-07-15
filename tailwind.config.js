@@ -1,5 +1,6 @@
 module.exports = {
-  content: ['./index.html','./index.js',],
+  content: ['./index.html','./index.js',
+  'fr/catranscam-fr.html','./index.js'],
   theme: {
     extend: {
 
