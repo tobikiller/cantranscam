@@ -22,3 +22,22 @@
 html{
     scroll-behavior: smooth;
 }
+
+
+.active{
+    transform: translateY(0);
+    visibility: visible;
+    transition: 1s ease;
+}
+
+.change{
+    background: white;
+    transition: 0.5 ease;
+}
+
+
+
+
+.orignal{
+    background: #135DFF;
+}

@@ -17,21 +17,19 @@
 
 <body>
     <nav>
-        <div class="flex justify-between items-center px-[25px] lg:px-[50px] pt-[25px] ">
-            <img class="h-[100px] " src="images/cantranscam-logo.svg" alt="cantranscam logo">
+        <div class="flex justify-between items-center px-[25px] lg:px-[50px] pt-[25px] relative ">
+            <img class="h-[100px]  " src="images/cantranscam-logo.svg" alt="cantranscam logo">
 
-            <ul class="hidden md:flex items-center space-x-[30px]  ">
-                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#">About Us</a></li>
-                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#contact">Contact Us</a></li>
-                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#our service">Our service</a></li>
-                <li class="font-Quantico text-lg "><a class="hover:text-LightBlue duration-500" href="#team">Team</a></li>
-                <li class="font-Quantico text-lg bg-LightBlue rounded-lg p-1 "><a class="text-white" href="#">request an
-                        appointement</a></li>
+            <ul class="z-20 flex flex-col justify-center items-center space-y-4 lg:space-y-0     lg:flex lg:flex-row lg:items-center lg:space-x-[30px] absolute top-0 left-0 w-full h-screen bg-LightBlue lg:bg-inherit lg:relative translate-y-[-1000px] lg:-translate-y-0 lg:w-auto lg:h-auto invisible  lg:visible   " id="nav-link">
+                <li class="font-Quantico  text-lg "><a class="hover:text-LightBlue lg:text-black  text-white text-5xl lg:text-lg text-left duration-500 links" href="#about-us">About Us</a></li>
+                <li class="font-Quantico  text-lg "><a class="hover:text-LightBlue lg:text-black  text-white text-5xl lg:text-lg text-left duration-500 links" href="#our-service">Our service</a></li>
+                <li class="font-Quantico  text-lg "><a class="hover:text-LightBlue lg:text-black  text-white text-5xl lg:text-lg text-left duration-500 links" href="#team">Team</a></li>
+                <li class="font-Quantico  text-lg bg-white lg:bg-LightBlue  rounded-lg p-1 hover:bg-blue-400 duration-500 "><a class="text-LightBlue lg:text-white" href="#contact">Contact Us</a></li>
             </ul>
-            <div class=" md:hidden space-y-0.5 ">
-                <div class="w-[25px] h-1 bg-LightBlue "></div>
-                <div class="w-[25px] h-1 bg-LightBlue "></div>
-                <div class="w-[25px] h-1 bg-LightBlue "></div>
+            <div class=" lg:hidden space-y-0.5 z-20 " id="nav-btn">
+                <div class="w-[25px] h-1 bg-LightBlue nav-sub"></div>
+                <div class="w-[25px] h-1 bg-LightBlue nav-sub"></div>
+                <div class="w-[25px] h-1 bg-LightBlue nav-sub"></div>
             </div>
         </div>
   
@@ -53,29 +51,26 @@
            
         </div>
                   
-        <div  class="container hidden bg-LightBlue w-screen mx-auto  absolute top-0   justify-center items-center h-screen">
-            <div class="w-[70%] bg-white ">
-                <h2>Request an appointement</h2>
-          </div>
-        </div>
+     
     </header>
-
+   
 </nav>
+
 
     <main class="mt-[75px] ">
 
 
 
-        <section class="mx-[25px] lg:mx-[25px] mb-20 ">
-            <div class="flex  flex-col md:flex-row justify-between items-center ">
-                <div class="space-y-2 ">
+        <section class="mx-[25px] lg:mx-[50px] mb-20 " id="about-us">
+            <div class="flex  flex-col lg:flex-row justify-between items-center ">
+                <div class="space-y-2  ">
                     <h1
-                    class="text-LightBlue font-Poppins font-bold text-2xl md:text-4xl lg:text-6xl  ">
+                    class="text-LightBlue font-Poppins font-bold text-2xl md:text-4xl lg:text-5xl  ">
                     CATRANSCAM <br><span class="text-Deepblue">YOUR IDEAL PARTNER</span></h1>
     
                     <p class="body-text max-w-md">With more than 20 years of experience CATRANSCAM was created in 1991 with the vision to facilitated international trade. Today we have a fully trained task force with years of experience in the field. Over 20 years of experience is over 20 years of loyal and quality service</p>
                 </div>
-                <img class="md:h-[350px] h-auto  lg:rounded-full"  src="images/truck.png" alt="">
+                <img class="md:h-[350px] h-auto  lg:rounded-full mt-[20px] lg:mt-0  "  src="images/truck.png" alt="">
             </div>
         </section>
 
@@ -85,26 +80,26 @@
 
          
 
-            <h2 class="font-Poppins font-bold text-4xl text-white bg-LightBlue p-5 max-w-[300px] mx-auto text-center ">Our <span
+            <h2 class="font-Poppins font-bold text-4xl rounded-lg text-white bg-LightBlue p-5 max-w-[300px] mx-auto text-center " id="our-service">Our <span
                     class="text-Deepblue">Services</span></h2>
 
             <div class="flex flex-col lg:flex-row items-center justify-between  gap-10  mt-8">
-               <div class="grid grid-cols-1  lg:grid-cols-2  items-center gap-5">
+               <div class="grid grid-cols-1  md:grid-cols-2  items-center gap-5">
                 <div class="space-y-2">
                     <img src="icons/transit.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Transit</h3>
-                    <p class="font-Quantico text-black leading-6 text-base g:max-w-[420px] ">A team versed in diverse operations in international trade, negotiations of landing ETA, insurance etc. With diligence we take care of all sea, air, land operations upstream or downstream clearance.</p>
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs lg:max-w-[420px] ">A team versed in diverse operations in international trade, negotiations of landing ETA, insurance etc. With diligence we take care of all sea, air, land operations upstream or downstream clearance.</p>
                 </div>
                 <div class="space-y-2">
                     <img src="icons/approved.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Approved customes commisioner</h3>
-                    <p class="font-Quantico text-black leading-6 text-base lg:max-w-[420px] ">Privileged domain of declaration as well as choice of customs. Our competent declarant staff are indispensably friendly experienced. We treat your files in optimal conditions of safety, rigor, speed and professionalism..</p>
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs lg:max-w-[420px] ">Privileged domain of declaration as well as choice of customs. Our competent declarant staff are indispensably friendly experienced. We treat your files in optimal conditions of safety, rigor, speed and professionalism..</p>
                 </div>
 
                 <div class="space-y-2">
                     <img src="icons/transport.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Transport</h3>
-                    <p class="font-Quantico text-black leading-6 text-base g:max-w-[420px] ">To support the growth of
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs lg:max-w-[420px] ">To support the growth of
                         its activities, CATRANSCAM has developed its transportation service. A large and varied fleet of
                         vehicles to meet the needs and requirement of customers. Coverage in transportation goes beyond
                         Cameroon and extends across the CEMAC region. </p>
@@ -114,7 +109,7 @@
                 <div class="space-y-2">
                     <img src="icons/storage.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Ungroupping Storage</h3>
-                    <p class="font-Quantico text-black leading-6 text-base g:max-w-[420px] ">Member of SEA, a network of
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs lg:max-w-[420px] ">Member of SEA, a network of
                         renowned
                         correspondent bonded warehouses. We guaranty any grouping and ungrouping operation within
                         the best conditions </p>
@@ -123,7 +118,7 @@
                 <div class="space-y-2">
                     <img src="icons/fret.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Freight Reservation</h3>
-                    <p class="font-Quantico text-black leading-6 text-base ">We are part of a network of unloaders
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs ">We are part of a network of unloaders
                         distributed
                         around the world with a recognised and established diligence. We have the solution for your
                         request in freight air or sea</p>
@@ -132,7 +127,7 @@
                 <div class="space-y-2">
                     <img src="icons/transfert.svg" alt="">
                     <h3 class="text-xl text-Deepblue font-bold">Transfert</h3>
-                    <p class="font-Quantico text-black leading-6 text-base ">Distance is no barrier . We convey your goods in all safety 
+                    <p class="font-Quantico text-black leading-6 text-base md:max-w-xs ">Distance is no barrier . We convey your goods in all safety 
                     </p>
                 </div>
                </div>
@@ -178,7 +173,7 @@
 
         <section class="customer mt-[75px]  ">
              <div class="space-y-1 grid place-items-center mx-[25px] md:mx-[50px] pb-5 ">
-                   <h3 class="text-2xl md:text-3xl lg:text-4xl font-Poppins text-LightBlue font-bold text-center">They trust <span class="text-Deepblue">us</span> </h3>
+                   <h3 class="text-3xl lg:text-4xl font-Poppins text-LightBlue font-bold text-center">They trust <span class="text-Deepblue">us</span> </h3>
                    <p class="body-text text-center max-w-full md:max-w-[570px]  max-auto  ">CATRANSCAM MANAGES STRATEGIC FREIGHT PROCUREMENT FOR SOME OF THE WORLD'S LEADING COMPANIES.</p>
              </div>
              
@@ -200,10 +195,10 @@
             
         </section>
 
-        <section class="process mx-[25px] lg:mx-[50px] ">
+        <section class="process mx-[25px] lg:mx-[50px] mt-[75px] ">
             <h2 class="font-Poppins font-bold text-Deepblue  text-3xl md:text-4xl text-left md:mx-auto   max-w-full md:max-w-2xl md:text-center lg:max-w-[479px] mb-4   ">We provide the best process experience</h2>
              <div class="flex flex-col lg:flex-row justify-between items-center  ">
-                 <div class="space-y-[96px] ">
+                 <div class="space-y-[46px] md:space-y-[96px] mt-[20px] ">
 
                    <div class="flex flex-col   items-start space-x-0 md:space-x-5 md:flex-row space-y-5 md:space-y-0 ">
                        <div class="w-[75px] h-[75px] bg-LightBlue grid place-items-center rounded-full ">
@@ -240,7 +235,7 @@
 
                  </div>
 
-                 <div class=" overflow-hidden lg:w-[530px] lg:h-[600px] ">
+                 <div class=" overflow-hidden lg:w-[530px] lg:h-[600px] mt-[40px] md:mt-0  ">
                     <video loop muted autoplay playinsline class="md:max-w-full lg:max-w-[790px] md:h-[660px] overflow-hidden " >
                         <source  src="images/process.mp4" type="video/mp4">
                     </video>
@@ -254,7 +249,7 @@
                  <div class="flex  flex-col lg:flex-row justify-between items-center ml-[25px] lg:mx-[50px]  ">
                        <div class="space-y-2 mb-6 text-left sm:text-center sm:mx-auto lg:text-left lg:mx-0">
                            <h2 class="text-6xl font-Poppins text-LightBlue font-bold ">Our <br> Team </h2>
-                           <p class="body-text max-w-sm ">Specialsed in our sector of activity we provide you with top notch services</p>
+                           <p class="body-text max-w-xs md:max-w-sm  ">Specialsed in our sector of activity we provide you with top notch services</p>
                            <div class="social flex items-center justify-start sm:justify-center lg:justify-start  space-x-0.5">
                                <a href="#"><span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #135dff; font-size: 32px;"></span></a>
                                <a href="#"><span class="iconify" data-icon="ant-design:facebook-filled" style="color: #135dff; font-size: 32px;"></span></a>
@@ -263,15 +258,15 @@
 
 
                           <!-- Team-Profiles -->
-                           <div class=" autoplay space-x-3 overflow-hidden flex items-center w-[100%]  ">
+                           <div class=" autoplay space-x-3 overflow-hidden flex items-center w-[100%]  " id="team">
 
                             <div class="mx-5">
                                 <div class="bg-profile-DG bg-center  bg-cover  w-[305px] h-[445px] relative group ">
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Fuya Rigobert</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Directeur General</p>
-                                         <p class="font-Quantico font-bold text-white ">20 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">General Manager</p>
+                                         <p class="font-Quantico font-bold text-white ">20+ Years of <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -283,8 +278,8 @@
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Njilenou Wandji Emmanuel</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Responsable Administratif et Financier</p>
-                                         <p class="font-Quantico font-bold text-white ">19 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">Financial & Administrative manager                                      </p>
+                                         <p class="font-Quantico font-bold text-white ">19 Years <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -296,8 +291,9 @@
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Djoukam Blaise</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Déclarant No 1 Chef Service D’exploitation </p>
-                                         <p class="font-Quantico font-bold text-white ">10 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-sm text-white ">Declarant N°1 Chief Operating Officer
+                                        </p>
+                                         <p class="font-Quantico font-bold text-white ">10 years of <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -309,8 +305,8 @@
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Ndemeck Dieudonne</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Déclarant No 2 Service D’exploitation</p>
-                                         <p class="font-Quantico font-bold text-white ">8 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">Declarant N°2 </p>
+                                         <p class="font-Quantico font-bold text-white ">8 years of <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -323,8 +319,8 @@
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">M Mouangeu Thimote </p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Magasinier Principal Sous Douane  </p>
-                                         <p class="font-Quantico font-bold text-white ">11 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">Warehouse Officer </p>
+                                         <p class="font-Quantico font-bold text-white ">11 years of <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -336,8 +332,22 @@
                                     <div class="absolute bottom-5 z-10 ml-[10px] ">
                                      <p  class="font-Poppins font-bold text-white  ">Mme Tsobgni Marcelline</p>
                                      <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
-                                         <p class=" font-Quantico text-white">Secrétaire de Direction </p>
-                                         <p class="font-Quantico font-bold text-white ">15 ans <span class="font-thin " >d'experience</span></p>
+                                         <p class=" font-Quantico text-white">Executive Secretary </p>
+                                         <p class="font-Quantico font-bold text-white ">15 years of<span class="font-thin " >experience</span></p>
+                                     </div>
+                                    
+                                    </div>
+                                  <div class="  gradient absolute top-0 w-[305px] h-[445px]  "></div> 
+                                </div> 
+                            </div>
+
+                            <div class="mx-5">
+                                <div class="bg-profile-comp bg-center  bg-cover  w-[305px] h-[445px] relative group ">
+                                    <div class="absolute bottom-5 z-10 ml-[10px] ">
+                                     <p  class="font-Poppins font-bold text-white  ">M Adrien Etoa</p>
+                                     <div class="lg:opacity-0 lg:group-hover:opacity-100 group-hover:mt-2 transition-all duration-200 ease-linear">
+                                         <p class=" font-Quantico text-white">Transit Officer </p>
+                                         <p class="font-Quantico font-bold text-white ">8 years of  <span class="font-thin " >experience</span></p>
                                      </div>
                                     
                                     </div>
@@ -361,18 +371,24 @@
 
     </main>
 
+
+
+
+
+    <!-- contact-section -->
+
     <section class="form mt-20 mx-[25px] lg:mx-[50px] " id="contact">
         
         <div class="space-y-3"> 
            <h2 class="font-Poppins  text-LightBlue text-5xl font-bold">Contact Us</h2>
-           <p class="font-Quantico text-base text-gray-600 max-w-sm">Feel free to contact for any inquries and we will get back to you</p>
+           <p class="font-Quantico text-base text-gray-600 max-w-xs md:max-w-sm">Feel free to contact for any inquries and we will get back to you</p>
         </div>
         
         <div class="flex flex-col md:flex-row md:space-x-4  justify-between md:items-center ">
 
        
 
-        <form class="w-full" action="https://formsubmit.co/info@cantranscam.net" method="POST">
+        <form class="w-full" action="https://formsubmit.co/info@catranscam.net" method="POST">
             <div class="   my-10 space-y-8  lg:max-w-[650px]   ">
                 <!-- names -->
                 <div class="relative email">

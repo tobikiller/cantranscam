@@ -1,47 +1,28 @@
-// const team = document.getElementById("team-1")
-// const character = document.querySelector(".md:character")
-// const team2 = document.getElementById("team-2")
-// const proffesion2 = document.querySelector(".profession-2")
+const navBtn = document.getElementById("nav-btn")
+const navLink = document.getElementById("nav-link")
+const navSub = document.querySelectorAll(".nav-sub")
 
-// console.log(proffesion2);
-// console.log(team2);
-// window.addEventListener("DOMContentLoaded", function(){
-//     hoverIn()
-// })
+const links = document.querySelectorAll(".links")
 
-// function hoverIn(){
-//     team.addEventListener("mouseover",function(){
-
-//         character.classList.add("activate") 
-        
-         
-//       })
-      
-//       team.addEventListener('mouseleave',function(){
-      
-//          character.classList.remove("activate") 
-          
-           
-//         })
-
-
-
-
-
-      
-// }
-
-// team2.addEventListener("mouseover",function(){
-
-//     proffesion2.classList.remove("activate2") 
+navBtn.addEventListener('click', function(){
+    navLink.classList.toggle("active")
+    navSub.forEach((e) => {
     
-     
-//   })
-  
-//   team2.addEventListener('mouseleave',function(){
+       e.classList.toggle("change")
+    });
+
+
    
-//     proffesion2.classList.remove("activate2")
-      
-       
-//     })
+})
+
+
+links.forEach((i)=>{
+    i.addEventListener("click",function(){
+        navLink.classList.remove("active")
+        navSub.forEach((e) => {
+    
+            e.classList.toggle("orignal")
+         });
+    })
+})
 

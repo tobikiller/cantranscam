@@ -22,6 +22,7 @@ module.exports = {
         "profile-DG":"url('images/DG.jpg') ", 
         "profiel-group":"url('images/cantranscam-team.jpg') ", 
         "truck":"url('images/truck.png') ", 
+        "profile-comp":"url('images/profile-comp.png') ",
       }
 
     },
