@@ -1,8 +1,9 @@
 const navBtn = document.getElementById("nav-btn")
 const navLink = document.getElementById("nav-link")
 const navSub = document.querySelectorAll(".nav-sub")
-
+const langBtn = document.getElementById("btn-lang")
 const links = document.querySelectorAll(".links")
+const langDisplay = document.getElementById("display-lang")
 
 navBtn.addEventListener('click', function(){
     navLink.classList.toggle("active")
@@ -13,6 +14,10 @@ navBtn.addEventListener('click', function(){
 
 
    
+})
+
+langBtn.addEventListener("click", function(){
+langDisplay.classList.toggle("on")
 })
 
 
