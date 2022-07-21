@@ -31,3 +31,28 @@ links.forEach((i)=>{
     })
 })
 
+
+
+gsap.registerPlugin(ScrollTrigger)
+
+let tl = gsap.timeline({default: {ease:"SlowMo.easeOut"}})
+
+tl.from(".small-title",{
+    scrollTrigger: ".small-title",
+    y:20,
+    opacity:0,
+    duration:1,
+  
+    stagger:0.5
+
+})
+
+tl.from(".small-text",{
+
+    y:20,
+    opacity:0,
+    duration:1,
+  
+  
+
+})
