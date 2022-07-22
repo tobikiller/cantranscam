@@ -37,6 +37,17 @@ gsap.registerPlugin(ScrollTrigger)
 
 let tl = gsap.timeline({default: {ease:"SlowMo.easeOut"}})
 
+
+tl.from(".links",{
+  
+  
+   opacity:0,
+   duration:0.5,
+   stagger:0.2,
+   
+   ease:"power3.out",
+})
+
 tl.from(".small-title",{
     
     y:20,
@@ -69,13 +80,42 @@ gsap.from(".about-title",{
     stagger:0.5
 })
 
+gsap.from(".about-text",{
+    scrollTrigger: {
+        trigger:".about-text",
+        toggleActions:"play none none none"
+        
+    },
+
+    x:80,
+    opacity:0,
+    duration:1,
+    ease:"power1.out",
+    
+})
+
+gsap.from(".image-mask",{
+    scrollTrigger: {
+        trigger:".image-mask",
+        toggleActions:"play none none none",
+        start:"start center"
+        
+    },
+
+    x:80,
+    opacity:0,
+    duration:1,
+    ease:"power1.out",
+    
+})
+
 
 
 TweenMax.from(".mask-text",{
     scrollTrigger: {
         trigger:".mask-text",
         start:"top center",
-        markers:"true",
+        
         toggleActions:"play none none none"
         
     },
@@ -85,3 +125,64 @@ TweenMax.from(".mask-text",{
  
    ease:"power3.out",
 })
+
+
+TweenMax.from(".services",{
+    scrollTrigger: {
+        trigger:".services",
+        start:"top center",
+        
+        toggleActions:"play none none none"
+        
+    },
+    x:-40,
+   opacity:0,
+   duration:1.5,
+   stagger:0.5,
+ 
+   ease:"power3.out",
+})
+
+
+gsap.from(".number", {
+    scrollTrigger: {
+        trigger:".number",
+        start:"-800%, 20%",
+        markers:true,
+        
+        toggleActions:"play none none none"
+        
+    },
+    textContent: 0,
+    duration: 1,
+    ease: "Power1.easeIn",
+    snap: { textContent: 1 },
+    stagger: 1,
+    // onUpdate: textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ","),
+  });
+
+  gsap.from(".numbers", {
+    scrollTrigger: {
+        trigger:".numbers",
+        start:"-800%, 20%",
+        
+        toggleActions:"play none none none"
+        
+    },
+    textContent: 0,
+    duration: 2,
+    ease: "power1.in",
+    snap: { textContent: 1 },
+    stagger: {
+      each: 1.0,
+      onUpdate: function() {
+        this.targets()[0].innerHTML = numberWithCommas(Math.ceil(this.targets()[0].textContent));
+      },
+    }
+  });
+  
+  
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+ 
