@@ -143,6 +143,25 @@ TweenMax.from(".services",{
    ease:"power3.out",
 })
 
+TweenMax.from(".rel-text", {
+
+    scrollTrigger: {
+        trigger:".rel-text ",
+        start:"-20%",
+       
+       
+        
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration: 1,
+   
+    y:100,
+    ease: "Power1.easeIn",
+    
+})
+
 
 gsap.from(".number", {
     scrollTrigger: {
@@ -190,24 +209,7 @@ gsap.from(".number", {
 
 
 
-  TweenMax.from(".rel-text", {
 
-    scrollTrigger: {
-        trigger:".rel-text ",
-        start:"-20%",
-       
-       
-        
-        toggleActions:"play none none none"
-        
-    },
-    opacity:0,
-    duration: 1,
-    delay:1,
-    y:100,
-    ease: "Power1.easeIn",
-    
-})
 
 gsap.from(".vehiculex ", {
     scrollTrigger: {
