@@ -195,7 +195,7 @@ gsap.from(".number", {
     scrollTrigger: {
         trigger:".rel-text ",
         start:"-20%",
-        markers:true,
+       
        
         
         toggleActions:"play none none none"
@@ -213,7 +213,7 @@ gsap.from(".vehiculex ", {
     scrollTrigger: {
         trigger:".vehiculex ",
         start:"-20%",
-        markers:true,
+        
        
         
         toggleActions:"play none none none"
@@ -233,7 +233,7 @@ gsap.from(".vehicules ", {
     scrollTrigger: {
         trigger:".vehicules ",
         start:"-20%",
-        markers:true,
+        
        
         
         toggleActions:"play none none none"
