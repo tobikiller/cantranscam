@@ -634,8 +634,8 @@ video {
   margin-top: 40px;
 }
 
-.mt-\[75px\] {
-  margin-top: 75px;
+.mt-\[95px\] {
+  margin-top: 95px;
 }
 
 .mb-20 {
@@ -648,6 +648,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[75px\] {
+  margin-top: 75px;
 }
 
 .mb-4 {
@@ -672,10 +676,6 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mt-\[95px\] {
-  margin-top: 95px;
 }
 
 .flex {

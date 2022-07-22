@@ -185,4 +185,101 @@ gsap.from(".number", {
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
- 
+
+
+
+
+
+  TweenMax.from(".rel-text", {
+
+    scrollTrigger: {
+        trigger:".rel-text ",
+        start:"-20%",
+        markers:true,
+       
+        
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration: 1,
+    delay:1,
+    y:100,
+    ease: "Power1.easeIn",
+    
+})
+
+gsap.from(".vehiculex ", {
+    scrollTrigger: {
+        trigger:".vehiculex ",
+        start:"-20%",
+        markers:true,
+       
+        
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration:1,
+    x:-20,
+    delay:0.5,
+    ease: "Power2.easeIn",
+
+
+   
+  });
+
+gsap.from(".vehicules ", {
+    scrollTrigger: {
+        trigger:".vehicules ",
+        start:"-20%",
+        markers:true,
+       
+        
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration:1,
+    x:20,
+    delay:0.5,
+    ease: "Power2.easeIn",
+
+
+   
+  });
+
+  gsap.from(".trust ", {
+    scrollTrigger: {
+        trigger:".vehicules ",
+        start:"-20%",
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration:1,
+    y:20,
+    delay:0.5,
+    ease: "Power2.easeIn",
+
+
+   
+  });
+
+
+    gsap.from(".trust-text ", {
+    scrollTrigger: {
+        trigger:".vehicules ",
+        start:"-20%",
+        toggleActions:"play none none none"
+        
+    },
+    opacity:0,
+    duration:1,
+    y:20,
+    delay:0.5,
+    ease: "Power2.easeIn",
+
+
+   
+  });
