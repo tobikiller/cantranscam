@@ -148,7 +148,7 @@ gsap.from(".number", {
     scrollTrigger: {
         trigger:".number",
         start:"-800%, 20%",
-        markers:true,
+       
         
         toggleActions:"play none none none"
         
